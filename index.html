@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horizont - онлайн-школа німецької мови, рівні A1-B2</title>
+<meta name="description" content="Живі онлайн-заняття з німецької в групі з шести людей. Рівні від A1 до B2 поділені на акти по 30 годин, у кінці акту тест. Пробне заняття безкоштовне.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:title" content="Horizont - онлайн-школа німецької мови">
+<meta property="og:description" content="Німецька для тих, кому вона потрібна вже зараз. Групи з шести людей, акти по 30 годин, пробне заняття безкоштовне.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="theme-color" content="#1B2236">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/pre.js"></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти до змісту</a>
+
+<header class="head">
+  <div class="head__in">
+    <a class="logo" href="#top">
+      <img class="logo__hand" src="assets/img/manicule.svg" width="54" height="30" alt="">
+      <span>
+        <span class="logo__name">Horizont</span>
+        <span class="logo__tag">ШКОЛА НІМЕЦЬКОЇ МОВИ</span>
+      </span>
+    </a>
+    <button class="btn btn--line btn--sm" type="button" id="toc-btn" aria-expanded="false" aria-controls="toc">Глави</button>
+    <a class="btn btn--sm" href="#zapys">Запиши мене!</a>
+  </div>
+  <nav class="toc" id="toc" aria-label="Глави сторінки" hidden>
+    <ol>
+      <li><a href="#dlia-koho"><span class="n" aria-hidden="true">I</span><span>Для кого ця школа</span></a></li>
+      <li><a href="#navchannia"><span class="n" aria-hidden="true">II</span><span>Як влаштовано навчання</span></a></li>
+      <li><a href="#zmist"><span class="n" aria-hidden="true">III</span><span>Зміст</span></a></li>
+      <li><a href="#riven"><span class="n" aria-hidden="true">IV</span><span>Який у тебе рівень</span></a></li>
+      <li><a href="#vidhuky"><span class="n" aria-hidden="true">V</span><span>Відгуки</span></a></li>
+      <li><a href="#vykladachi"><span class="n" aria-hidden="true">VI</span><span>Як ми добираємо викладачів</span></a></li>
+      <li><a href="#tsiny"><span class="n" aria-hidden="true">VII</span><span>Ціни</span></a></li>
+      <li><a href="#pytannia"><span class="n" aria-hidden="true">VIII</span><span>Питання</span></a></li>
+      <li><a href="#zapys"><span class="n" aria-hidden="true">IX</span><span>Запис на пробне</span></a></li>
+      <li><a href="#epiloh"><span class="n" aria-hidden="true">&nbsp;</span><span>Епілог</span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- Обкладинка -->
+<section class="cover" id="top" aria-labelledby="h-cover">
+  <div class="cover__in">
+    <div>
+      <p class="cover__name" aria-hidden="true">Horizont</p>
+      <p class="cover__sub">Онлайн-школа німецької мови</p>
+      <h1 id="h-cover">Німецька для тих, кому вона потрібна вже зараз</h1>
+      <p class="cover__text">Живі онлайн-заняття в групі з шести людей. Один акт триває 30 годин і завершується підсумковим тестом.</p>
+      <div class="cover__cta">
+        <a class="btn btn--paper" href="#zapys" data-point>Запиши мене на пробне!</a>
+        <a class="cover__link" href="#riven">Не знаю свого рівня</a>
+      </div>
+      <p class="cover__idiom it">Дарованому коню в зуби не дивляться, а на дароване пробне дивись скільки хочеш.</p>
+    </div>
+
+    <form class="label js-form" data-kind="strip" novalidate>
+      <fieldset class="f-set" data-contact>
+        <legend>Запис на пробне одним рядком</legend>
+        <div class="seg">
+          <label><input type="radio" name="s-via" value="email" checked> Пошта</label>
+          <label><input type="radio" name="s-via" value="tel"> Телефон</label>
+          <label><input type="radio" name="s-via" value="tg"> Telegram</label>
+        </div>
+        <div class="f-row">
+          <label for="s-contact" data-contact-label>Твоя пошта</label>
+          <input class="f-in" id="s-contact" name="contact" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com" aria-describedby="s-contact-err" required>
+          <span class="f-err" id="s-contact-err" role="alert"></span>
+        </div>
+      </fieldset>
+      <button class="btn" type="submit">Запиши мене!</button>
+      <p class="done" role="status" tabindex="-1" hidden>Дякуємо! Це навчальний проєкт, тому заявку нікуди не надіслано.</p>
+      <p class="note-star">* Це навчальний проєкт, дані нікуди не надсилаються</p>
+    </form>
+
+    <figure class="plate">
+      <img class="plate__img" src="assets/img/panorama-1600.webp" srcset="assets/img/panorama-800.webp 800w, assets/img/panorama-1600.webp 1600w" sizes="(min-width:1280px) 1200px, 94vw" width="1600" height="441" alt="Гравюра: панорама Відня з Бельведера, сад на передньому плані й лінія горизонту з вежами міста" fetchpriority="high">
+      <figcaption>Рис. 1. Карл Русс. Відень, панорама з Бельведера, 1820-1840. Wien Museum, CC0</figcaption>
+    </figure>
+  </div>
+  <div class="cover__edge" aria-hidden="true"></div>
+</section>
+
+<div class="fog fog--first" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<!-- I -->
+<section class="chapter" id="dlia-koho" aria-labelledby="h-1">
+  <span class="chapter__num" aria-hidden="true">I</span>
+  <h2 id="h-1">Для кого ця школа</h2>
+  <p class="drop">Horizont для тих, кому німецька потрібна для навчання, роботи або життя в Німеччині чи Австрії. Ми беремо і початківців, і тих, хто вже вчив мову, але більшість забув. Групи формуємо за рівнем, щоб ніхто не відставав і ніхто не нудьгував.</p>
+  <aside class="margin onmargin" aria-label="На полях">
+    <b>На полях</b>
+    <p>Язик до Києва доведе, а Zunge до Берліна. І до Відня також.</p>
+  </aside>
+  <dl class="cases">
+    <div><dt>Навчання</dt><dd>Потрібен рівень, якого вимагає твій університет, і ми підемо саме до нього.</dd></div>
+    <div><dt>Робота</dt><dd>Рівень залежить від професії, а його підбираємо після розмови.</dd></div>
+    <div><dt>Життя</dt><dd>Щоб розуміти листи від установ, лікаря та орендодавця, а не перекладати їх у телефоні.</dd></div>
+  </dl>
+  <aside class="margin">
+    <figure class="fig fig--s">
+      <img src="assets/img/pupils.webp" width="569" height="640" loading="lazy" alt="Гравюра: четверо учнів сидять на лаві, один записує в зошит">
+      <figcaption>Рис. 2. Альбрехт Дюрер. Шкільний учитель (фрагмент), 1510. The Met, CC0</figcaption>
+    </figure>
+  </aside>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- II -->
+<section class="chapter" id="navchannia" aria-labelledby="h-2">
+  <span class="chapter__num" aria-hidden="true">II</span>
+  <h2 id="h-2">Як влаштовано навчання</h2>
+  <p class="drop">Рівні від A1 до B2 поділені на акти. Один акт це 30 годин живих занять у групі з шести людей, тобто 20 уроків по 90 хвилин. Закінчується акт тестом. Темп обираєш сам.</p>
+  <ul class="modes">
+    <li><b>Звичайний режим</b><span class="big">2 уроки</span>на тиждень, акт триває 10 тижнів.</li>
+    <li><b>Режим «Я - швидкість»</b><span class="big">3 уроки</span>на тиждень, акт триває близько 7 тижнів.</li>
+  </ul>
+  <p>Уроків в обох режимах однакова кількість, змінюється лише швидкість. На рівень A1 припадає 3 акти, на A2 їх 4, на B1 їх 5, а на B2 їх 6. Після занять є домашні завдання, і вони входять до умов страховки.</p>
+
+  <div class="insure">
+    <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+      <defs><path id="seal-c" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+      <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="1.5 3.2"/>
+      <circle cx="60" cy="60" r="51" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <circle cx="60" cy="60" r="33" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <text font-family="Mulish,sans-serif" font-weight="700" font-size="10.5" letter-spacing="2.1" fill="currentColor"><textPath href="#seal-c" startOffset="1%">СТРАХОВКА АКТУ * HORIZONT * </textPath></text>
+      <text x="60" y="58" text-anchor="middle" font-family="Lora,serif" font-weight="600" font-size="17" fill="currentColor">Акт</text>
+      <text x="60" y="74" text-anchor="middle" font-family="Lora,serif" font-style="italic" font-weight="500" font-size="12" fill="currentColor">ще раз</text>
+    </svg>
+    <h3>Страховка</h3>
+    <p class="it">Завалив акт? Двічі в одну річку не ввійдеш, а в акт можна. Ще й <a href="#umovy" data-point>безкоштовно</a>. Ми не з тих, хто ховає умови маленьким шрифтом.</p>
+    <p id="umovy">Тест акту можна безкоштовно перездати один раз протягом місяця після першої невдалої спроби. Якщо не склав і перездачу, акт можна пройти заново безкоштовно. Умови:</p>
+    <ul class="ticks">
+      <li>відвідано не менше 80% занять акту;</li>
+      <li>виконано не менше 80% домашніх завдань;</li>
+      <li>заявку подано протягом 14 днів після перездачі;</li>
+      <li>безкоштовний повтор акту один на рівень;</li>
+      <li>гроші за акт не повертаємо.</li>
+    </ul>
+    <p>Страховка дає ще одну спробу. Самого рівня вона не гарантує.</p>
+  </div>
+
+  <div class="trial">
+    <h3>Пробне заняття</h3>
+    <p>Пробне заняття безкоштовне. Це знайомство з викладачем, який визначає твій рівень. Нічого проходити заздалегідь не потрібно.</p>
+    <p class="it">Дарованому коню в зуби не дивляться, а на дароване пробне дивись скільки хочеш.</p>
+    <p><a class="btn" href="#zapys">Запиши мене на пробне!</a></p>
+  </div>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- III -->
+<section class="chapter" id="zmist" aria-labelledby="h-3">
+  <span class="chapter__num" aria-hidden="true">III</span>
+  <h2 id="h-3">Зміст</h2>
+  <p class="lead">Німецька від A1 до B2 складається з 18 актів.</p>
+
+  <div class="acts wide" id="acts">
+    <span class="acts__path" aria-hidden="true"><i id="acts-prog"></i></span>
+    <div class="acts__row">
+      <p class="acts__lv">A1<small>3 акти, 90 годин</small></p>
+      <ol class="acts__cards reveal">
+        <li class="act" style="--i:0"><b>Акт 1</b><span>A1, 30 годин</span></li>
+        <li class="act" style="--i:1"><b>Акт 2</b><span>A1, 30 годин</span></li>
+        <li class="act" style="--i:2"><b>Акт 3</b><span>A1, 30 годин</span></li>
+      </ol>
+    </div>
+    <div class="acts__row">
+      <p class="acts__lv">A2<small>4 акти, 120 годин</small></p>
+      <ol class="acts__cards reveal" start="4">
+        <li class="act" style="--i:0"><b>Акт 4</b><span>A2, 30 годин</span></li>
+        <li class="act" style="--i:1"><b>Акт 5</b><span>A2, 30 годин</span></li>
+        <li class="act" style="--i:2"><b>Акт 6</b><span>A2, 30 годин</span></li>
+        <li class="act" style="--i:3"><b>Акт 7</b><span>A2, 30 годин</span></li>
+      </ol>
+    </div>
+    <div class="acts__row">
+      <p class="acts__lv">B1<small>5 актів, 150 годин</small></p>
+      <ol class="acts__cards reveal" start="8">
+        <li class="act" style="--i:0"><b>Акт 8</b><span>B1, 30 годин</span></li>
+        <li class="act" style="--i:1"><b>Акт 9</b><span>B1, 30 годин</span></li>
+        <li class="act" style="--i:2"><b>Акт 10</b><span>B1, 30 годин</span></li>
+        <li class="act" style="--i:3"><b>Акт 11</b><span>B1, 30 годин</span></li>
+        <li class="act" style="--i:4"><b>Акт 12</b><span>B1, 30 годин</span></li>
+      </ol>
+    </div>
+    <div class="acts__row">
+      <p class="acts__lv">B2<small>6 актів, 180 годин</small></p>
+      <ol class="acts__cards reveal" start="13">
+        <li class="act" style="--i:0"><b>Акт 13</b><span>B2, 30 годин</span></li>
+        <li class="act" style="--i:1"><b>Акт 14</b><span>B2, 30 годин</span></li>
+        <li class="act" style="--i:2"><b>Акт 15</b><span>B2, 30 годин</span></li>
+        <li class="act" style="--i:3"><b>Акт 16</b><span>B2, 30 годин</span></li>
+        <li class="act" style="--i:4"><b>Акт 17</b><span>B2, 30 годин</span></li>
+        <li class="act" style="--i:5"><b>Акт 18</b><span>B2, 30 годин</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <table class="tbl wide">
+    <caption>Акти, години й тижні за рівнями</caption>
+    <thead>
+      <tr><th scope="col">Рівень</th><th scope="col">Актів</th><th scope="col">Годин</th><th scope="col">Разом годин</th><th scope="col">Орієнтир Goethe (разом)</th><th scope="col">Звичайний, тижнів</th><th scope="col">«Я - швидкість», тижнів</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">A1</th><td data-l="Актів">3</td><td data-l="Годин">90</td><td data-l="Разом годин">90</td><td data-l="Орієнтир Goethe (разом)">60-150</td><td data-l="Звичайний, тижнів">30</td><td data-l="«Я - швидкість», тижнів">20</td></tr>
+      <tr><th scope="row">A2</th><td data-l="Актів">4</td><td data-l="Годин">120</td><td data-l="Разом годин">210</td><td data-l="Орієнтир Goethe (разом)">150-260</td><td data-l="Звичайний, тижнів">40</td><td data-l="«Я - швидкість», тижнів">близько 27</td></tr>
+      <tr><th scope="row">B1</th><td data-l="Актів">5</td><td data-l="Годин">150</td><td data-l="Разом годин">360</td><td data-l="Орієнтир Goethe (разом)">260-490</td><td data-l="Звичайний, тижнів">50</td><td data-l="«Я - швидкість», тижнів">близько 33</td></tr>
+      <tr><th scope="row">B2</th><td data-l="Актів">6</td><td data-l="Годин">180</td><td data-l="Разом годин">540</td><td data-l="Орієнтир Goethe (разом)">450-600</td><td data-l="Звичайний, тижнів">60</td><td data-l="«Я - швидкість», тижнів">40</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><th scope="row">Разом</th><td data-l="Актів">18</td><td data-l="Годин">540</td><td></td><td></td><td data-l="Звичайний, тижнів">180</td><td data-l="«Я - швидкість», тижнів">120</td></tr>
+    </tfoot>
+  </table>
+  <p class="cap">Орієнтири Goethe-Institut подано в годинах навчання наростаючим підсумком. Джерело: <a href="https://www.goethe.de/ins/gb/de/sta/lon/kur/faq.html" rel="noopener">goethe.de</a></p>
+
+  <h3>Що означає кожен рівень</h3>
+  <dl class="levels">
+    <div><dt>A1</dt><dd>Розуміти й вживати прості повсякденні вирази, представитися, попросити найнеобхідніше.</dd></div>
+    <div><dt>A2</dt><dd>Порозумітися в побутових ситуаціях: магазин, сім'я, місцевість, робота.</dd></div>
+    <div><dt>B1</dt><dd>Розуміти основне в чіткій мові на знайомі теми, давати собі раду майже в усіх ситуаціях, розповісти про досвід і плани.</dd></div>
+    <div><dt>B2</dt><dd>Розуміти головне в складних текстах, говорити спонтанно, чітко пояснити свою позицію.</dd></div>
+  </dl>
+  <aside class="margin span2">
+    <figure class="fig fig--s">
+      <img src="assets/img/fool.webp" width="528" height="640" loading="lazy" alt="Гравюра: блазень в окулярах сидить за пюпітром серед книжок і змахує з них пил">
+      <figcaption>Рис. 3. «Корабель дурнів» Себастіана Бранта, Базель, 1495. Розділ про непотрібні книги (фрагмент). The Met, CC0</figcaption>
+    </figure>
+  </aside>
+  <p class="warn">Це лише час занять. Без самостійної роботи, тобто домашніх завдань, повторення слів, читання й аудіо, потрібного рівня за відведені акти не досягти. Точний обсяг самостійної роботи залежить від людини.</p>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- IV -->
+<section class="chapter" id="riven" aria-labelledby="h-4">
+  <span class="chapter__num" aria-hidden="true">IV</span>
+  <h2 id="h-4">Який у тебе рівень</h2>
+  <p class="it">Сім разів відміряй, один раз запишись. Ми не кусаємося :)</p>
+  <p>Точний рівень визначає викладач на пробному. Познач твердження, які правдиві для тебе.</p>
+
+  <form class="check wide" id="check" aria-label="Самооцінка рівня">
+    <fieldset data-level="A1">
+      <legend>A1</legend>
+      <label><input type="checkbox"> <span>Можу представитися і сказати, звідки я та де живу</span></label>
+      <label><input type="checkbox"> <span>Розумію прості фрази на кшталт «Wie heißt du?»</span></label>
+      <label><input type="checkbox"> <span>Можу замовити їжу або запитати ціну</span></label>
+      <label><input type="checkbox"> <span>Читаю короткі написи й оголошення з відомими словами</span></label>
+      <label><input type="checkbox"> <span>Можу порахувати до ста і назвати час</span></label>
+    </fieldset>
+    <fieldset data-level="A2">
+      <legend>A2</legend>
+      <label><input type="checkbox"> <span>Можу розповісти про сім'ю, роботу чи навчання кількома простими реченнями</span></label>
+      <label><input type="checkbox"> <span>Розумію найважливіше в коротких оголошеннях</span></label>
+      <label><input type="checkbox"> <span>Можу купити квиток, записатися на прийом, запитати дорогу</span></label>
+      <label><input type="checkbox"> <span>Можу написати коротке повідомлення знайомому</span></label>
+      <label><input type="checkbox"> <span>Можу розповісти про минуле, вживаючи Perfekt</span></label>
+    </fieldset>
+    <fieldset data-level="B1">
+      <legend>B1</legend>
+      <label><input type="checkbox"> <span>Розумію основне в чіткій мові на знайомі теми</span></label>
+      <label><input type="checkbox"> <span>Можу описати подію, мрію чи план і пояснити чому</span></label>
+      <label><input type="checkbox"> <span>Даю собі раду майже в усіх ситуаціях у поїздці</span></label>
+      <label><input type="checkbox"> <span>Пишу простий зв'язний текст</span></label>
+      <label><input type="checkbox"> <span>Можу висловити згоду чи незгоду і не перемикаюся на іншу мову</span></label>
+    </fieldset>
+    <fieldset data-level="B2">
+      <legend>B2</legend>
+      <label><input type="checkbox"> <span>Розумію головне в складних текстах, у тому числі фахових</span></label>
+      <label><input type="checkbox"> <span>Спілкуюся спонтанно</span></label>
+      <label><input type="checkbox"> <span>Пишу докладний текст з аргументами за і проти</span></label>
+      <label><input type="checkbox"> <span>Дивлюся новини чи фільм без субтитрів</span></label>
+      <label><input type="checkbox"> <span>Веду розмову на співбесіді чи в установі без сценарію</span></label>
+    </fieldset>
+  </form>
+
+  <p class="result" id="result" aria-live="polite">Починай з A1.<small>Це орієнтир. Точний рівень підтвердить викладач на пробному.</small></p>
+
+  <form class="card js-form" data-kind="plan" novalidate>
+    <h3>План на 30 днів для твого рівня</h3>
+    <p>Залиш ім'я й контакт, і ми віддамо план самостійних занять у PDF. Рівень візьмемо з позначок вище.</p>
+    <div class="f-row">
+      <label for="p-name">Ім'я</label>
+      <input class="f-in" id="p-name" name="name" type="text" autocomplete="given-name" aria-describedby="p-name-err" required>
+      <span class="f-err" id="p-name-err" role="alert"></span>
+    </div>
+    <fieldset class="f-set" data-contact>
+      <legend class="f-leg">Як з тобою зв'язатися?</legend>
+      <div class="seg">
+        <label><input type="radio" name="p-via" value="email" checked> Пошта</label>
+        <label><input type="radio" name="p-via" value="tel"> Телефон</label>
+        <label><input type="radio" name="p-via" value="tg"> Telegram</label>
+      </div>
+      <div class="f-row">
+        <label for="p-contact" data-contact-label>Твоя пошта</label>
+        <input class="f-in" id="p-contact" name="contact" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com" aria-describedby="p-contact-err" required>
+        <span class="f-err" id="p-contact-err" role="alert"></span>
+      </div>
+    </fieldset>
+    <button class="btn" type="submit" data-point>Дай мені план на 30 днів</button>
+    <p class="done" role="status" tabindex="-1" hidden>Дякуємо! Це навчальний проєкт, тому заявку нікуди не надіслано. <a id="plan-link" href="assets/pdf/plan-A1.pdf" download>Завантажити план для рівня A1 (PDF)</a></p>
+    <p class="note-star">* Це навчальний проєкт, дані нікуди не надсилаються</p>
+  </form>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- V -->
+<section class="chapter" id="vidhuky" aria-labelledby="h-5">
+  <span class="chapter__num" aria-hidden="true">V</span>
+  <h2 id="h-5">Відгуки</h2>
+  <div class="reviews wide reveal">
+    <figure class="review" style="--i:0">
+      <img src="assets/img/av-olena.webp" width="224" height="224" loading="lazy" alt="Умовний портрет: Олена">
+      <blockquote>«У групі нас шестеро, тому говорити доводилося на кожному уроці. Тест я не склала ні з першого, ні з другого разу, тож пройшла акт ще раз, і другий вийшов легше».</blockquote>
+      <figcaption><b>Олена, 22 роки</b><br><span>рівень A2, звичайний режим</span></figcaption>
+    </figure>
+    <figure class="review" style="--i:2">
+      <img src="assets/img/av-maksym.webp" width="224" height="224" loading="lazy" alt="Умовний портрет: Максим">
+      <blockquote>«Три уроки на тиждень багато, але вже в перший місяць я міг замовити їжу німецькою без підказок».</blockquote>
+      <figcaption><b>Максим, 19 років</b><br><span>рівень A1, режим «Я - швидкість»</span></figcaption>
+    </figure>
+    <figure class="review" style="--i:4">
+      <img src="assets/img/av-daryna.webp" width="224" height="224" loading="lazy" alt="Умовний портрет: Дарина">
+      <blockquote>«Мені потрібен був рівень для співбесіди. Два рази на тиждень виявилося якраз, щоб працювати і встигати».</blockquote>
+      <figcaption><b>Дарина, 25 років</b><br><span>рівень B1, звичайний режим</span></figcaption>
+    </figure>
+    <figure class="review" style="--i:6">
+      <img src="assets/img/av-andrii.webp" width="224" height="224" loading="lazy" alt="Умовний портрет: Андрій">
+      <blockquote>«Найбільше допомогли дискусії в групі. На співбесіді не було відчуття, що я говорю вперше».</blockquote>
+      <figcaption><b>Андрій, 28 років</b><br><span>рівень B2, режим «Я - швидкість»</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- VI -->
+<section class="chapter" id="vykladachi" aria-labelledby="h-6">
+  <span class="chapter__num" aria-hidden="true">VI</span>
+  <h2 id="h-6">Як ми добираємо викладачів</h2>
+  <p class="drop">Біографій не публікуємо, бо біографія не показує, як людина викладає. Критерії:</p>
+  <aside class="margin span3">
+    <figure class="fig fig--s fig--flip">
+      <img src="assets/img/teacher.webp" width="545" height="720" loading="lazy" alt="Гравюра: учитель у високій шапці сидить на лаві й показує указкою">
+      <figcaption>Рис. 4. Альбрехт Дюрер. Шкільний учитель (фрагмент, дзеркально), 1510. The Met, CC0</figcaption>
+    </figure>
+  </aside>
+  <ul class="ticks">
+    <li>рівень C1 або вище з сертифікатом;</li>
+    <li>педагогічна освіта або підготовка з викладання німецької як іноземної;</li>
+    <li>пробне заняття з методистом перед роботою з групою;</li>
+    <li>один викладач веде групу весь акт.</li>
+  </ul>
+  <p>З викладачем знайомишся на пробному.</p>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- VII -->
+<section class="chapter" id="tsiny" aria-labelledby="h-7">
+  <span class="chapter__num" aria-hidden="true">VII</span>
+  <h2 id="h-7">Ціни</h2>
+  <p class="drop">Платиш за акт, а не за весь курс. Рахуємо за годину: 300 грн. Акт з 30 годин коштує 9 000 грн, у режимі «Я - швидкість» так само.</p>
+  <p><span class="tag" data-point>300 грн <small>за годину</small></span></p>
+  <table class="tbl">
+    <caption>Ціна за рівнями</caption>
+    <thead>
+      <tr><th scope="col">Рівень</th><th scope="col">Актів</th><th scope="col">По актах, грн</th><th scope="col">Рівень одразу, -10%, грн</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">A1</th><td data-l="Актів">3</td><td data-l="По актах, грн">27 000</td><td data-l="Рівень одразу, -10%, грн">24 300</td></tr>
+      <tr><th scope="row">A2</th><td data-l="Актів">4</td><td data-l="По актах, грн">36 000</td><td data-l="Рівень одразу, -10%, грн">32 400</td></tr>
+      <tr><th scope="row">B1</th><td data-l="Актів">5</td><td data-l="По актах, грн">45 000</td><td data-l="Рівень одразу, -10%, грн">40 500</td></tr>
+      <tr><th scope="row">B2</th><td data-l="Актів">6</td><td data-l="По актах, грн">54 000</td><td data-l="Рівень одразу, -10%, грн">48 600</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><th scope="row">Разом</th><td data-l="Актів">18</td><td data-l="По актах, грн">162 000</td><td data-l="Рівень одразу, -10%, грн">145 800</td></tr>
+    </tfoot>
+  </table>
+  <p>У ціну входять заняття в групі з шести людей, домашні завдання, тест у кінці акту та страховка (безкоштовна перездача тесту і повтор акту). Пробне безкоштовне.</p>
+  <p><a class="btn" href="#zapys">Запиши мене на пробне!</a></p>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- VIII -->
+<section class="chapter" id="pytannia" aria-labelledby="h-8">
+  <span class="chapter__num" aria-hidden="true">VIII</span>
+  <h2 id="h-8">Питання</h2>
+  <div class="faq">
+    <details>
+      <summary>Скільки триває шлях від нуля до B2?</summary>
+      <div><p>Це 18 актів, тобто 540 годин. За орієнтирами Goethe-Institut на B2 потрібно 450-600 годин навчання, ми закладаємо 540. У звичайному режимі близько 180 тижнів, у режимі «Я - швидкість» близько 120.</p></div>
+    </details>
+    <details open>
+      <summary>Чи можна вивчити німецьку за рік?</summary>
+      <div><p>Ні. До B1 у режимі «Я - швидкість» близько 80 тижнів, тобто понад півтора року. Обіцяти менше ми не будемо: на жаль, не кожен з нас вундеркінд.</p></div>
+    </details>
+    <details>
+      <summary>Чи вистачить самих занять?</summary>
+      <div><p>Ні, самостійна робота не менш важлива: домашні завдання, повторення, читання й аудіо. Заняття дають структуру, а рівень дає практика.</p></div>
+    </details>
+    <details>
+      <summary>Чим відрізняються режими?</summary>
+      <div><p>Кількістю уроків на тиждень: 2 або 3. Акт, ціна й страховка однакові.</p></div>
+    </details>
+    <details>
+      <summary>Як працює страховка?</summary>
+      <div><p>Тест акту можна безкоштовно перездати один раз протягом місяця після першої невдалої спроби. Якщо не склав і перездачу, акт можна пройти заново безкоштовно. Для цього потрібно відвідати не менше 80% занять, виконати не менше 80% домашніх завдань і подати заявку протягом 14 днів після перездачі. Повтор один на рівень, гроші за акт не повертаємо.</p></div>
+    </details>
+    <details>
+      <summary>Треба щось знати до пробного?</summary>
+      <div><p>Ні, нічого проходити заздалегідь не потрібно.</p></div>
+    </details>
+    <details>
+      <summary>Скільки людей у групі?</summary>
+      <div><p>Шестеро.</p></div>
+    </details>
+    <details>
+      <summary>Скільки коштує навчання?</summary>
+      <div><p>Акт 9 000 грн, ціни за рівні в розділі <a href="#tsiny">«Ціни»</a>.</p></div>
+    </details>
+  </div>
+  <aside class="margin">
+    <figure>
+      <div class="munch" id="munch" role="img" aria-label="Гравюра: барон Мюнхгаузен летить верхи на гарматному ядрі, поруч летять ще одне ядро і його капелюх">
+        <img class="munch__fig" src="assets/img/munch.webp" width="640" height="604" loading="lazy" alt="">
+        <img class="munch__ball" src="assets/img/munch-ball.webp" width="140" height="130" loading="lazy" alt="">
+        <img class="munch__hat" src="assets/img/munch-hat.webp" width="220" height="170" loading="lazy" alt="">
+      </div>
+      <figcaption class="cap">Рис. 5. Август фон Вілле. Мюнхгаузен на гарматному ядрі (фрагмент), до 1872. Wikimedia Commons, суспільне надбання</figcaption>
+    </figure>
+  </aside>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+<!-- IX -->
+<section class="chapter" id="zapys" aria-labelledby="h-9">
+  <span class="chapter__num" aria-hidden="true">IX</span>
+  <h2 id="h-9">Запишися на пробне заняття</h2>
+  <form class="js-form" data-kind="trial" novalidate>
+    <div class="f-row">
+      <label for="t-name">Ім'я</label>
+      <input class="f-in" id="t-name" name="name" type="text" autocomplete="given-name" aria-describedby="t-name-err" required>
+      <span class="f-err" id="t-name-err" role="alert"></span>
+    </div>
+    <fieldset class="f-set" data-contact>
+      <legend class="f-leg">Як з тобою зв'язатися?</legend>
+      <div class="seg">
+        <label><input type="radio" name="t-via" value="email" checked> Пошта</label>
+        <label><input type="radio" name="t-via" value="tel"> Телефон</label>
+        <label><input type="radio" name="t-via" value="tg"> Telegram</label>
+      </div>
+      <div class="f-row">
+        <label for="t-contact" data-contact-label>Твоя пошта</label>
+        <input class="f-in" id="t-contact" name="contact" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com" aria-describedby="t-contact-err" required>
+        <span class="f-err" id="t-contact-err" role="alert"></span>
+      </div>
+    </fieldset>
+    <fieldset class="f-set">
+      <legend class="f-leg">Орієнтовний рівень</legend>
+      <div class="seg">
+        <label><input type="radio" name="t-level" value="A1"> A1</label>
+        <label><input type="radio" name="t-level" value="A2"> A2</label>
+        <label><input type="radio" name="t-level" value="B1"> B1</label>
+        <label><input type="radio" name="t-level" value="B2"> B2</label>
+        <label><input type="radio" name="t-level" value="?" checked> Не знаю</label>
+      </div>
+    </fieldset>
+    <fieldset class="f-set">
+      <legend class="f-leg">Режим</legend>
+      <div class="seg">
+        <label><input type="radio" name="t-mode" value="2" checked> Звичайний</label>
+        <label><input type="radio" name="t-mode" value="3"> «Я - швидкість»</label>
+      </div>
+    </fieldset>
+    <button class="btn" type="submit" data-point>Запиши мене!</button>
+    <p class="done" role="status" tabindex="-1" hidden>Дякуємо! Це навчальний проєкт, тому заявку нікуди не надіслано.</p>
+    <p class="note-star">* Це навчальний проєкт, дані нікуди не надсилаються</p>
+  </form>
+  <p class="contacts">Контакти: <a href="mailto:hello@horizont.example">hello@horizont.example</a></p>
+</section>
+
+<div class="fog" aria-hidden="true"><i></i><i></i></div>
+
+</main>
+
+<!-- Епілог -->
+<footer class="epilog" id="epiloh" aria-labelledby="h-e">
+  <h2 id="h-e">Епілог</h2>
+  <figure>
+    <div class="cert" role="img" aria-label="Ілюстрація: остання сторінка з написом «Акт завершено» і порожніми рядками для імені та рівня">
+      <p class="cert__n" aria-hidden="true">Horizont</p>
+      <p class="cert__t" aria-hidden="true">Акт завершено</p>
+      <p class="cert__l" aria-hidden="true">Ім'я <i></i></p>
+      <p class="cert__l" aria-hidden="true">Рівень <i></i></p>
+      <img class="cert__hand" src="assets/img/manicule.svg" width="58" height="32" loading="lazy" alt="">
+    </div>
+    <figcaption class="cap cap--c">Рис. 6. Так могла б виглядати остання сторінка акту. Це ілюстрація, а не документ. Орнамент: «Корабель дурнів», Базель, 1495. The Met, CC0</figcaption>
+  </figure>
+  <div class="foot">
+    <div>
+      <ul>
+        <li><a href="pro-proyekt/index.html">Про проєкт</a></li>
+        <li><a href="cookie/index.html">Політика cookie</a></li>
+        <li><a href="mailto:hello@horizont.example">hello@horizont.example</a></li>
+      </ul>
+    </div>
+    <p>Horizont це навчальний проєкт, школа вигадана. Зображення: Wien Museum, The Metropolitan Museum of Art, Wikimedia Commons, fromoldbooks.org, ambientCG. Повний перелік джерел на сторінці <a href="pro-proyekt/index.html">«Про проєкт»</a>.</p>
+  </div>
+</footer>
+
+<div class="cookie" id="cookie" role="region" aria-label="Налаштування cookie" hidden>
+  <div class="cookie__in">
+    <p>Ми хочемо рахувати відвідування через Google Analytics. Без твоєї згоди аналітика вимкнена. Докладніше в <a href="cookie/index.html">політиці cookie</a>.</p>
+    <div class="cookie__b">
+      <button class="btn btn--paper btn--sm" type="button" data-cookie="deny">Відхилити необов'язкові</button>
+      <button class="btn btn--line btn--sm" type="button" data-cookie="allow">Прийняти всі</button>
+    </div>
+  </div>
+</div>
+
+<div class="hand-fly" id="hand" aria-hidden="true"><img src="assets/img/manicule.svg" width="74" height="41" alt=""></div>
+</body>
+</html>

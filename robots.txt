@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# ЗАГЛУШКА: заміни домен на справжню адресу сайту
+Sitemap: https://example.github.io/horizont/sitemap.xml
